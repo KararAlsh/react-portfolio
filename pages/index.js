@@ -45,6 +45,13 @@ export default function Home() {
             <Image className=' object-scale-down' src={Memoji} />
           </div>
         </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Little about me and what I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>Hello! My name is Karar, im a Junior full-stack developer who has recently completed a 3-month long bootcamp with <span className='text-teal-500'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. I have always been a creative person and have now found a passion in coding and bringing my ideas to life on the internet. I am a dedicated to writing clean, elegant code, and excited to apply my skills and knowledge to real-world projects.</p>
+            <p className='text-md py-2 leading-8 text-gray-800'>Im a team player who always is eager to learn and improve. With my recent training and experience, i am ready to take on new challenges and become a valuable asset to any development team and company.</p>
+          </div>
+        </section>
       </main>
     </div>
   )
