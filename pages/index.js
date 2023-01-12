@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import {BsLightbulbFill} from 'react-icons/bs';
-
+import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai';
 
 export default function Home() {
   return (
