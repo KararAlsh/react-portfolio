@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import {BsLightbulbFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai';
+import Image from "next/image";
+import Memoji from '../public/Memoji-Karar.png'
+
 
 export default function Home() {
   return (
@@ -28,15 +31,18 @@ export default function Home() {
           </nav>
           <div className='text-center p-10'>
             <h2 className='py-2 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Karar Alshreese</h2>
-            <h3 className='py-2 text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Fullstack Developer</h3>
-            <p>
+            <h3 className='py-2 font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Fullstack Developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>
               Motivated Junior Fullstack developer with experience of building clean and elegant projects looking for an opportunity to excell my development skills in an innovative environment. Hope you like my website!
             </p>
           </div>
-          <div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillLinkedin/>
             <AiFillInstagram/>
             <AiFillGithub/>
+          </div>
+          <div className=''>
+            <Image src={Memoji}/>
           </div>
         </section>
       </main>
