@@ -2,8 +2,10 @@ import Head from 'next/head';
 import {BsLightbulbFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai';
 import Image from "next/image";
-import Memoji from '../public/Memoji-Karar.png'
-
+import Memoji from '../public/Memoji-Karar.png';
+import ideas from '../public/ideas.png';
+import productivity from '../public/productivity.png';
+import design from '../public/design.png';
 
 export default function Home() {
   return (
@@ -50,6 +52,41 @@ export default function Home() {
             <h3 className='text-3xl py-1'>Little about me and what I offer</h3>
             <p className='text-md py-2 leading-8 text-gray-800'>Hello! My name is Karar, im a Junior full-stack developer who has recently completed a 3-month long bootcamp with <span className='text-teal-500'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. I have always been a creative person and have now found a passion in coding and bringing my ideas to life on the internet. I am a dedicated to writing clean, elegant code, and excited to apply my skills and knowledge to real-world projects.</p>
             <p className='text-md py-2 leading-8 text-gray-800'>Im a team player who always is eager to learn and improve. With my recent training and experience, i am ready to take on new challenges and become a valuable asset to any development team and company.</p>
+          </div>
+          <div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image width={100} height={100} src={ideas} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Great ideas</h3>
+              <p className='py-2'>
+                Coming up with great new ideas that will benefit my team and employer.
+              </p>
+              <h4 className='py-4 text-teal-600'>My approaches</h4>
+              <p className='text-gray-800 py-1'>Brainstorming</p>
+              <p className='text-gray-800 py-1'>Serviceminded</p>
+              <p className='text-gray-800 py-1'>Problem solving</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image width={100} height={100} src={productivity} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Productivity</h3>
+              <p className='py-2'>
+                Coming up with great new ideas that will benefit my team and employer.
+              </p>
+              <h4 className='py-4 text-teal-600'>My approaches</h4>
+              <p className='text-gray-800 py-1'>Brainstorming</p>
+              <p className='text-gray-800 py-1'>Serviceminded</p>
+              <p className='text-gray-800 py-1'>Problem solving</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image width={100} height={100} src={design} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Great design</h3>
+              <p className='py-2'>
+                Coming up with great new ideas that will benefit my team and employer.
+              </p>
+              <h4 className='py-4 text-teal-600'>My approaches</h4>
+              <p className='text-gray-800 py-1'>Brainstorming</p>
+              <p className='text-gray-800 py-1'>Serviceminded</p>
+              <p className='text-gray-800 py-1'>Problem solving</p>
+            </div>
           </div>
         </section>
       </main>
