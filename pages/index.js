@@ -41,8 +41,8 @@ export default function Home() {
             <AiFillInstagram/>
             <AiFillGithub/>
           </div>
-          <div className=''>
-            <Image src={Memoji}/>
+          <div className='relative mx-auto bg-gradient-to-b from-purple-400 to-pink-600 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+            <Image className=' object-scale-down' src={Memoji} />
           </div>
         </section>
       </main>
