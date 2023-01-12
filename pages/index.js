@@ -61,7 +61,7 @@ export default function Home() {
                 Coming up with great new ideas that will benefit my team and employer.
               </p>
               <h4 className='py-4 text-teal-600'>My approaches</h4>
-              <p className='text-gray-800 py-1'>Brainstorming</p>
+              <p className='text-gray-800 py-1'>Creativity</p>
               <p className='text-gray-800 py-1'>Serviceminded</p>
               <p className='text-gray-800 py-1'>Problem solving</p>
             </div>
@@ -69,23 +69,23 @@ export default function Home() {
               <Image width={100} height={100} src={productivity} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Productivity</h3>
               <p className='py-2'>
-                Coming up with great new ideas that will benefit my team and employer.
+                Always hard working.
               </p>
               <h4 className='py-4 text-teal-600'>My approaches</h4>
-              <p className='text-gray-800 py-1'>Brainstorming</p>
-              <p className='text-gray-800 py-1'>Serviceminded</p>
-              <p className='text-gray-800 py-1'>Problem solving</p>
+              <p className='text-gray-800 py-1'>Setting clear and achievable goals</p>
+              <p className='text-gray-800 py-1'>Prioritizing and managing time effectively</p>
+              <p className='text-gray-800 py-1'>Consistently taking action towards achieving my goals.</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image width={100} height={100} src={design} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Great design</h3>
               <p className='py-2'>
-                Coming up with great new ideas that will benefit my team and employer.
+              I design with a strong sense of functionality, aesthetics, and usability in my work.
               </p>
               <h4 className='py-4 text-teal-600'>My approaches</h4>
-              <p className='text-gray-800 py-1'>Brainstorming</p>
-              <p className='text-gray-800 py-1'>Serviceminded</p>
-              <p className='text-gray-800 py-1'>Problem solving</p>
+              <p className='text-gray-800 py-1'>Functionality</p>
+              <p className='text-gray-800 py-1'>Aesthetics</p>
+              <p className='text-gray-800 py-1'>Usability</p>
             </div>
           </div>
         </section>
