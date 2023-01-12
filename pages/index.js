@@ -14,7 +14,7 @@ export default function Home() {
       <main className=' bg-white px-10 '>
         <section className='min-h-screen'>
           <nav className='py-10 mb 12 flex justify-between'>
-            <h1 className=' text-xl font-burtons'>Karar Alshreese</h1>
+            <h1 className=' text-sm font-burtons'>Karar Alshreese</h1>
             <ul className=' flex items-center'>
               <li>
                 <BsLightbulbFill className='cursor-pointer text-2xl'/>
@@ -26,6 +26,18 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className='text-center p-10'>
+            <h2 className='py-2 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Karar Alshreese</h2>
+            <h3 className='py-2 text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Fullstack Developer</h3>
+            <p>
+              Motivated Junior Fullstack developer with experience of building clean and elegant projects looking for an opportunity to excell my development skills in an innovative environment. Hope you like my website!
+            </p>
+          </div>
+          <div>
+            <AiFillLinkedin/>
+            <AiFillInstagram/>
+            <AiFillGithub/>
+          </div>
         </section>
       </main>
     </div>
