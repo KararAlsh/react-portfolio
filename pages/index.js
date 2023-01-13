@@ -25,7 +25,7 @@ export default function Home() {
                 <BsLightbulbFill className='cursor-pointer text-2xl'/>
               </li>
               <li>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">
+                <a className=' font-mono bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">
                 Resume
                 </a>
               </li>
@@ -34,7 +34,7 @@ export default function Home() {
           <div className='text-center p-10'>
             <h2 className='py-2 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Karar Alshreese</h2>
             <h3 className='py-2 font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Fullstack Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>
+            <p className='font-burtons text-md py-5 leading-8 text-gray-800'>
               Motivated Junior Fullstack developer with experience of building clean and elegant projects looking for an opportunity to excell my development skills in an innovative environment. Hope you like my website!
             </p>
           </div>
@@ -49,43 +49,43 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Little about me and what I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>Hello! My name is Karar, im a Junior full-stack developer who has recently completed a 3-month long bootcamp with <span className='text-teal-500'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. I have always been a creative person and have now found a passion in coding and bringing my ideas to life on the internet. I am a dedicated to writing clean, elegant code, and excited to apply my skills and knowledge to real-world projects.</p>
-            <p className='text-md py-2 leading-8 text-gray-800'>Im a team player who always is eager to learn and improve. With my recent training and experience, i am ready to take on new challenges and become a valuable asset to any development team and company.</p>
+            <h3 className='text-3xl py-1 font-burtons'>Little about me and what I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 font-mono'>Hello! My name is Karar, im a Junior full-stack developer who has recently completed a 3-month long bootcamp with <span className='text-teal-500'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. I have always been a creative person and have now found a passion in coding and bringing my ideas to life on the internet. I am a dedicated to writing clean, elegant code, and excited to apply my skills and knowledge to real-world projects.</p>
+            <p className='text-md py-2 leading-8 text-gray-800 font-mono'>Im a team player who always is eager to learn and improve. With my recent training and experience, i am ready to take on new challenges and become a valuable asset to any development team and company.</p>
           </div>
           <div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-2xl p-10 rounded-xl my-10'>
               <Image width={100} height={100} src={ideas} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Great ideas</h3>
-              <p className='py-2'>
+              <p className='py-2 font-mono'>
                 Coming up with great new ideas that will benefit my team and employer.
               </p>
-              <h4 className='py-4 text-teal-600'>My approaches</h4>
-              <p className='text-gray-800 py-1'>Creativity</p>
-              <p className='text-gray-800 py-1'>Serviceminded</p>
-              <p className='text-gray-800 py-1'>Problem solving</p>
+              <h4 className='py-4 text-teal-600 font-mono'>My approaches</h4>
+              <p className='text-gray-800 py-1 font-mono'>Creativity</p>
+              <p className='text-gray-800 py-1 font-mono'>Serviceminded</p>
+              <p className='text-gray-800 py-1 font-mono'>Problem solving</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image width={100} height={100} src={productivity} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Productivity</h3>
-              <p className='py-2'>
+              <p className='py-2 font-mono'>
                 Always hard working.
               </p>
-              <h4 className='py-4 text-teal-600'>My approaches</h4>
-              <p className='text-gray-800 py-1'>Setting clear and achievable goals</p>
-              <p className='text-gray-800 py-1'>Prioritizing and managing time effectively</p>
-              <p className='text-gray-800 py-1'>Consistently taking action towards achieving my goals.</p>
+              <h4 className='py-4 text-teal-600 font-mono'>My approaches</h4>
+              <p className='text-gray-800 py-1 font-mono'>Setting clear and achievable goals</p>
+              <p className='text-gray-800 py-1 font-mono'>Prioritizing and managing time effectively</p>
+              <p className='text-gray-800 py-1 font-mono'>Consistently taking action towards achieving my goals.</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image width={100} height={100} src={design} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Great design</h3>
-              <p className='py-2'>
+              <p className='py-2 font-mono'>
               I design with a strong sense of functionality, aesthetics, and usability in my work.
               </p>
-              <h4 className='py-4 text-teal-600'>My approaches</h4>
-              <p className='text-gray-800 py-1'>Functionality</p>
-              <p className='text-gray-800 py-1'>Aesthetics</p>
-              <p className='text-gray-800 py-1'>Usability</p>
+              <h4 className='py-4 text-teal-600 font-mono'>My approaches</h4>
+              <p className='text-gray-800 py-1 font-mono'>Functionality</p>
+              <p className='text-gray-800 py-1 font-mono'>Aesthetics</p>
+              <p className='text-gray-800 py-1 font-mono'>Usability</p>
             </div>
           </div>
         </section>
