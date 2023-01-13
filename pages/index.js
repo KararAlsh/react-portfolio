@@ -6,8 +6,43 @@ import Memoji from '../public/Memoji-Karar.png';
 import ideas from '../public/ideas.png';
 import productivity from '../public/productivity.png';
 import design from '../public/design.png';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick'
+import { useState, useEffect, useRef } from 'react';
+
+
+
 
 export default function Home() {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const ref = useRef(null);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  }
+
+  useEffect(() => {
+    const handleAfterChange = (current) => {
+      setCurrentSlide(current);
+    }
+    settings.afterChange = handleAfterChange
+  }, []);
+
+  const goToPrevSlide = () => {
+    ref.current.slickPrev();
+  }
+
+  const goToNextSlide = () => {
+    ref.current.slickNext();
+  }
+
   return (
     <div>
       <Head>
@@ -86,6 +121,28 @@ export default function Home() {
               <p className='text-gray-800 py-1 font-mono'>Functionality</p>
               <p className='text-gray-800 py-1 font-mono'>Aesthetics</p>
               <p className='text-gray-800 py-1 font-mono'>Usability</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1 font-burtons'>Portfolio</h3>
+          </div>
+          <div>
+            <Slider ref={ref} {...settings}>
+              <div>
+                <Image src={design} alt='image 1' />
+              </div>
+              <div>
+                <Image src={productivity} alt='image 2' />
+              </div>
+              <div>
+                <Image src={ideas} alt='image 3' />
+              </div>
+            </Slider>
+            <div className="text-center">
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-l" onClick={goToPrevSlide}>Previous</button>
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-r" onClick={goToNextSlide}>Next</button>
             </div>
           </div>
         </section>
