@@ -13,7 +13,6 @@ import { useState, useEffect, useRef } from 'react';
 
 
 
-
 export default function Home() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -131,18 +130,26 @@ export default function Home() {
           <div>
             <Slider ref={ref} {...settings}>
               <div>
-                <Image src={design} alt='image 1' />
+              <Image width={100} height={100} src={design} />
               </div>
               <div>
-                <Image src={productivity} alt='image 2' />
+              <Image width={100} height={100} src={productivity} />
               </div>
               <div>
-                <Image src={ideas} alt='image 3' />
+              <Image width={100} height={100} src={ideas} />
               </div>
             </Slider>
             <div className="text-center">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-l" onClick={goToPrevSlide}>Previous</button>
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-r" onClick={goToNextSlide}>Next</button>
+              <button className="bg-gradient-to-b from-purple-400 to-pink-600 mx-10 my-5 text-white font-bold py-2 px-4 rounded" onClick={goToPrevSlide}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                  <path fillRule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clipRule="evenodd" />
+                </svg>
+              </button>
+              <button className="bg-gradient-to-b from-purple-400 to-pink-600 mx-10 my-5 text-white font-bold py-2 px-4 rounded" onClick={goToNextSlide}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                  <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clipRule="evenodd" />
+                </svg>
+              </button>
             </div>
           </div>
         </section>
