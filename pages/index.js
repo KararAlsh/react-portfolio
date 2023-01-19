@@ -6,10 +6,19 @@ import Memoji from '../public/Memoji-Karar.png';
 import ideas from '../public/ideas.png';
 import productivity from '../public/productivity.png';
 import design from '../public/design.png';
+import Airbnb1 from '../public/Airbnb1.png';
+import Airbnb2 from '../public/Airbnb2.png';
+import Airbnb3 from '../public/Airbnb3.png';
+import Airbnb4 from '../public/Airbnb4.png';
+import Airbnb5 from '../public/Airbnb5.png';
+import Airbnb6 from '../public/Airbnb6.png';
+import Airbnb7 from '../public/Airbnb7.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick'
 import { useState, useEffect, useRef } from 'react';
+import { Tabs } from "flowbite-react";
+import { Carousel } from "flowbite-react";
 
 
 
@@ -77,81 +86,213 @@ export default function Home() {
             <AiFillInstagram/>
             <AiFillGithub/>
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-purple-400 to-pink-600 rounded-full w-80 h-80 mt-20 overflow-hidden'>
+          <div className='relative mx-auto bg-gradient-to-b from-purple-400 to-pink-600 rounded-full w-80 h-80 my-6 overflow-hidden'>
             <Image className=' object-scale-down' src={Memoji} />
           </div>
         </section>
         <section>
           <div>
             <h3 className='text-3xl py-2 font-burtons'>Little about me and what I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 font-mono'>Hello! My name is Karar, im a Junior full-stack developer who has recently completed a 3-month long bootcamp with <span className='text-teal-500'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. I have always been a creative person and have now found a passion in coding and bringing my ideas to life on the internet. I am a dedicated to writing clean, elegant code, and excited to apply my skills and knowledge to real-world projects.</p>
-            <p className='text-md py-2 leading-8 text-gray-800 font-mono'>Im a team player who always is eager to learn and improve. With my recent training and experience, i am ready to take on new challenges and become a valuable asset to any development team and company.</p>
+            <p className='text-md py-2 leading-8 text-gray-500 font-semibold'>Hello! My name is Karar, im a Junior full-stack developer who has recently completed a 3-month long bootcamp with <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. I have always been a creative person and have now found a passion in coding and bringing my ideas to life on the internet. I am a dedicated to writing clean, elegant code, and excited to apply my skills and knowledge to real-world projects.</p>
+            <p className='text-md py-2 leading-8 text-gray-500 font-semibold'>Im a team player who always is eager to learn and improve. With my recent training and experience, i am ready to take on new challenges and become a valuable asset to any development team and company.</p>
           </div>
           <div>
-            <div className='text-center shadow-2xl p-10 rounded-xl my-10'>
+            <div className='text-center shadow-2xl p-10 rounded-xl my-10 mx-80'>
               <Image width={100} height={100} src={ideas} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Great ideas</h3>
-              <p className='py-2 font-mono'>
+              <h3 className='text-lg font-burtons pt-8 pb-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Great ideas</h3>
+              <p className='text-gray-500 font-semibold'>
                 Coming up with great new ideas that will benefit my team and employer.
               </p>
-              <h4 className='py-4 text-teal-600 font-mono'>My approaches</h4>
-              <p className='text-gray-800 py-1 font-mono'>Creativity</p>
-              <p className='text-gray-800 py-1 font-mono'>Serviceminded</p>
-              <p className='text-gray-800 py-1 font-mono'>Problem solving</p>
+              <h4 className='py-4 font-mono font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500'>My approaches</h4>
+              <p className='text-gray-500 font-semibold'>Creativity</p>
+              <p className='text-gray-500 font-semibold'>Serviceminded</p>
+              <p className='text-gray-500 font-semibold'>Problem solving</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-2xl p-10 rounded-xl my-10 mx-80'>
               <Image width={100} height={100} src={productivity} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Productivity</h3>
-              <p className='py-2 font-mono'>
+              <h3 className='text-lg font-burtons pt-8 pb-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Productivity</h3>
+              <p className='text-gray-500 font-semibold'>
                 Always hard working.
               </p>
-              <h4 className='py-4 text-teal-600 font-mono'>My approaches</h4>
-              <p className='text-gray-800 py-1 font-mono'>Setting clear and achievable goals</p>
-              <p className='text-gray-800 py-1 font-mono'>Prioritizing and managing time effectively</p>
-              <p className='text-gray-800 py-1 font-mono'>Consistently taking action towards achieving my goals.</p>
+              <h4 className='py-4 font-mono font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500'>My approaches</h4>
+              <p className='text-gray-500 font-semibold'>Setting clear and achievable goals</p>
+              <p className='text-gray-500 font-semibold'>Prioritizing and managing time effectively</p>
+              <p className='text-gray-500 font-semibold'>Consistently taking action towards achieving my goals.</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-2xl p-10 rounded-xl my-10 mx-80'>
               <Image width={100} height={100} src={design} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Great design</h3>
-              <p className='py-2 font-mono'>
+              <h3 className='text-lg font-burtons pt-8 pb-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Great design</h3>
+              <p className='text-gray-500 font-semibold'>
               I design with a strong sense of functionality, aesthetics, and usability in my work.
               </p>
-              <h4 className='py-4 text-teal-600 font-mono'>My approaches</h4>
-              <p className='text-gray-800 py-1 font-mono'>Functionality</p>
-              <p className='text-gray-800 py-1 font-mono'>Aesthetics</p>
-              <p className='text-gray-800 py-1 font-mono'>Usability</p>
+              <h4 className='py-4 font-mono font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500'>My approaches</h4>
+              <p className='text-gray-500 font-semibold'>Functionality</p>
+              <p className='text-gray-500 font-semibold'>Aesthetics</p>
+              <p className='text-gray-500 font-semibold'>Usability</p>
             </div>
           </div>
         </section>
         <section>
           <div>
             <h3 className='text-3xl py-1 font-burtons'>Portfolio</h3>
-          </div>
-          <div>
-            <Slider ref={ref} {...settings}>
-              <div>
-              <Image width={100} height={100} src={design} />
+          </div>  
+          <Tabs.Group className="flex justify-between" aria-label="Tabs with icons" style="underline">
+            <Tabs.Item active={true} title="Airbnb Clone"> 
+              <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
+                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                </Carousel>
               </div>
-              <div>
-              <Image width={100} height={100} src={productivity} />
+            </Tabs.Item>
+            <Tabs.Item title="Weather Tune">
+            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
+                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                </Carousel>
               </div>
-              <div>
-              <Image width={100} height={100} src={ideas} />
+            </Tabs.Item>
+            <Tabs.Item title="Age Calculator">
+            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
+                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                </Carousel>
               </div>
-            </Slider>
-            <div className="text-center">
-              <button className="bg-gradient-to-b from-purple-400 to-pink-600 mx-10 my-5 text-white font-bold py-2 px-4 rounded" onClick={goToPrevSlide}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                  <path fillRule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clipRule="evenodd" />
-                </svg>
-              </button>
-              <button className="bg-gradient-to-b from-purple-400 to-pink-600 mx-10 my-5 text-white font-bold py-2 px-4 rounded" onClick={goToNextSlide}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                  <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clipRule="evenodd" />
-                </svg>
-              </button>
-            </div>
-          </div>
+            </Tabs.Item>
+            <Tabs.Item title="Calculator">
+            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
+                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                </Carousel>
+              </div>
+            </Tabs.Item>
+            <Tabs.Item title="Google Clone">
+            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
+                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                   <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb1}
+                    alt="..."
+                  />
+                </Carousel>
+              </div>
+            </Tabs.Item>
+          </Tabs.Group>
         </section>
       </main>
     </div>
