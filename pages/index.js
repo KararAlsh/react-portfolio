@@ -20,6 +20,9 @@ import { useState, useEffect, useRef } from 'react';
 import { Tabs } from "flowbite-react";
 import { Carousel } from "flowbite-react";
 import Modal from 'react-modal';
+import { Card } from "flowbite-react";
+
+
 
 
 
@@ -140,12 +143,13 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1 font-burtons'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-500 font-semibold'>Here I would like to present to you a selection of screenshots showcasing the projects I have been working on since my time at <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. In total, I have created five projects, with my portfolio website being the sixth. I hope you find them interesting and engaging.</p>
           </div>  
           <Tabs.Group className="flex justify-between" aria-label="Tabs with icons" style="underline">
             <Tabs.Item active={true} title="Airbnb Clone"> 
               <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
                 <Carousel slide={false} width="60%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
-                  <Image
+                <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
                     alt="..."
@@ -163,6 +167,30 @@ export default function Home() {
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
                   />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb4}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb4);}}
+                  />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb5}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb5);}}
+                  />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb6}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb6);}}
+                  />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb7}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb7);}}
+                  />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
                   <div className="bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md p-4 max-w-7xl p-2">
@@ -172,7 +200,10 @@ export default function Home() {
                   </div>
                 </Modal>
               </div>
-              <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
+              <Card className='mx-44' href="#">
+                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Airbnb Clone</h3>
+                <p className='text-md py-2 leading-8 text-gray-500 font-semibold'>I am excited to present my Airbnb clone project, which I built using JavaScript, CSS, HTML, and Bootstrap for the front-end and MongoDB for the server-side. This project allowed me to work with different technologies and gain hands-on experience in building a web application that is similar to a real-world platform like Airbnb. The project features user authentication, property listings, reservations, and reviews. Users can create a profile, sign in, list a house, leave reviews, book a house, and navigate through the available properties without the need of an account. This project not only helped me improve my skills in web development but also gave me an opportunity to understand the functionalities of a vacation rental platform.</p>
+              </Card>
             </Tabs.Item>
             <Tabs.Item title="Weather Tune">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
@@ -194,6 +225,30 @@ export default function Home() {
                     src={Airbnb3}
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
+                  />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb4}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb4);}}
+                  />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb5}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb5);}}
+                  />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb6}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb6);}}
+                  />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={Airbnb7}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb7);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
