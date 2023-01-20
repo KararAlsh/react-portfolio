@@ -144,7 +144,7 @@ export default function Home() {
           <Tabs.Group className="flex justify-between" aria-label="Tabs with icons" style="underline">
             <Tabs.Item active={true} title="Airbnb Clone"> 
               <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-                <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
+                <Carousel slide={false} width="60%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
@@ -164,9 +164,11 @@ export default function Home() {
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
                   />
                 </Carousel>
-                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="bg-white rounded-md p-4 max-w-fit w-full">
-                  <div className="flex justify-center items-center">
-                    <Image className="w-3/4 h-full object-cover" src={currentImage} alt="..." onClick={() => setModalIsOpen(false)} />
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
+                  <div className="bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md p-4 max-w-7xl p-2">
+                      <div className="flex justify-center items-center bg-white">
+                          <Image className="w-3/4 h-full object-cover" src={currentImage} alt="..." onClick={() => setModalIsOpen(false)} />
+                      </div>
                   </div>
                 </Modal>
               </div>
@@ -174,129 +176,129 @@ export default function Home() {
             </Tabs.Item>
             <Tabs.Item title="Weather Tune">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-            <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+            <Carousel slide={false} width="60%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb2}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb3}
                     alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
                   />
                 </Carousel>
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
+                  <div className="bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md p-4 max-w-7xl p-2">
+                      <div className="flex justify-center items-center bg-white">
+                          <Image className="w-3/4 h-full object-cover" src={currentImage} alt="..." onClick={() => setModalIsOpen(false)} />
+                      </div>
+                  </div>
+                </Modal>
               </div>
               <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
             <Tabs.Item title="Age Calculator">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-            <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+            <Carousel slide={false} width="60%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb2}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb3}
                     alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
                   />
                 </Carousel>
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
+                  <div className="bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md p-4 max-w-7xl p-2">
+                      <div className="flex justify-center items-center bg-white">
+                          <Image className="w-3/4 h-full object-cover" src={currentImage} alt="..." onClick={() => setModalIsOpen(false)} />
+                      </div>
+                  </div>
+                </Modal>
               </div>
               <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
             <Tabs.Item title="Calculator">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-            <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+            <Carousel slide={false} width="60%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb2}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb3}
                     alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
                   />
                 </Carousel>
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
+                  <div className="bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md p-4 max-w-7xl p-2">
+                      <div className="flex justify-center items-center bg-white">
+                          <Image className="w-3/4 h-full object-cover" src={currentImage} alt="..." onClick={() => setModalIsOpen(false)} />
+                      </div>
+                  </div>
+                </Modal>
               </div>
               <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
             <Tabs.Item title="Google Clone">
               <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-              <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+              <Carousel slide={false} width="60%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb2}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb3}
                     alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
                   />
                 </Carousel>
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
+                  <div className="bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md p-4 max-w-7xl p-2">
+                      <div className="flex justify-center items-center bg-white">
+                          <Image className="w-3/4 h-full object-cover" src={currentImage} alt="..." onClick={() => setModalIsOpen(false)} />
+                      </div>
+                  </div>
+                </Modal>
               </div>
               <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
