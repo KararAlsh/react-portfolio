@@ -19,10 +19,15 @@ import Slider from 'react-slick'
 import { useState, useEffect, useRef } from 'react';
 import { Tabs } from "flowbite-react";
 import { Carousel } from "flowbite-react";
+import Modal from 'react-modal';
+
 
 
 
 export default function Home() {
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState('');
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const ref = useRef(null);
@@ -139,38 +144,37 @@ export default function Home() {
           <Tabs.Group className="flex justify-between" aria-label="Tabs with icons" style="underline">
             <Tabs.Item active={true} title="Airbnb Clone"> 
               <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+                <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb2}
                     alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
                   />
-                   <Image
+                  <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Airbnb3}
                     alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
-                  />
-                   <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb1}
-                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
                   />
                 </Carousel>
+                <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} className="bg-white rounded-md p-4 max-w-fit w-full">
+                  <div className="flex justify-center items-center">
+                    <Image className="w-3/4 h-full object-cover" src={currentImage} alt="..." onClick={() => setModalIsOpen(false)} />
+                  </div>
+                </Modal>
               </div>
+              <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
             <Tabs.Item title="Weather Tune">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+            <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
@@ -198,10 +202,11 @@ export default function Home() {
                   />
                 </Carousel>
               </div>
+              <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
             <Tabs.Item title="Age Calculator">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+            <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
@@ -229,10 +234,11 @@ export default function Home() {
                   />
                 </Carousel>
               </div>
+              <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
             <Tabs.Item title="Calculator">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+            <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
@@ -260,10 +266,11 @@ export default function Home() {
                   />
                 </Carousel>
               </div>
+              <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
             <Tabs.Item title="Google Clone">
-            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
-                <Carousel width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
+              <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 mx-44">
+              <Carousel slide={false} width="60%" className='bg-gradient-to-b from-purple-400 to-pink-600 rounded-md'>
                   <Image
                     className="h-full w-full object-contain"
                     src={Airbnb1}
@@ -291,6 +298,7 @@ export default function Home() {
                   />
                 </Carousel>
               </div>
+              <p className='text-black py-2 text-center'>Some description about the Airbnb clone project</p>
             </Tabs.Item>
           </Tabs.Group>
         </section>
