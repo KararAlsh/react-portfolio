@@ -2,10 +2,10 @@ import Head from 'next/head';
 import {BsLightbulbFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai';
 import Image from "next/image";
-import Memoji from '../public/Memoji-Karar.png';
-import ideas from '../public/ideas.png';
-import productivity from '../public/productivity.png';
-import design from '../public/design.png';
+import Memoji from '../public/Memoji-Karar.PNG';
+import ideas from '../public/ideas.PNG';
+import productivity from '../public/productivity.PNG';
+import design from '../public/design.PNG';
 import Airbnb1 from '../public/Airbnb1.PNG';
 import Airbnb2 from '../public/Airbnb2.PNG';
 import Airbnb3 from '../public/Airbnb3.PNG';
@@ -13,22 +13,22 @@ import Airbnb4 from '../public/Airbnb4.PNG';
 import Airbnb5 from '../public/Airbnb5.PNG';
 import Airbnb6 from '../public/Airbnb6.PNG';
 import Airbnb7 from '../public/Airbnb7.PNG';
-import WeatherTune1 from '../public/WeatherTune1.png'
-import WeatherTune2 from '../public/WeatherTune2.png'
-import WeatherTune3 from '../public/WeatherTune3.png'
-import WeatherTune4 from '../public/WeatherTune4.png'
-import WeatherTune5 from '../public/WeatherTune5.png'
-import WeatherTune6 from '../public/WeatherTune6.png'
-import WeatherTune7 from '../public/WeatherTune7.png'
-import WeatherTune8 from '../public/WeatherTune8.png'
-import AgeCalculator1 from '../public/AgeCalculator1.png'
-import AgeCalculator2 from '../public/AgeCalculator2.png'
-import AgeCalculator3 from '../public/AgeCalculator3.png'
-import Calculator1 from '../public/Calculator1.png'
-import Calculator2 from '../public/Calculator2.png'
-import Calculator3 from '../public/Calculator3.png'
-import Google1 from '../public/Google1.png'
-import Google2 from '../public/Google2.png'
+import WeatherTune1 from '../public/WeatherTune1.PNG'
+import WeatherTune2 from '../public/WeatherTune2.PNG'
+import WeatherTune3 from '../public/WeatherTune3.PNG'
+import WeatherTune4 from '../public/WeatherTune4.PNG'
+import WeatherTune5 from '../public/WeatherTune5.PNG'
+import WeatherTune6 from '../public/WeatherTune6.PNG'
+import WeatherTune7 from '../public/WeatherTune7.PNG'
+import WeatherTune8 from '../public/WeatherTune8.PNG'
+import AgeCalculator1 from '../public/AgeCalculator1.PNG'
+import AgeCalculator2 from '../public/AgeCalculator2.PNG'
+import AgeCalculator3 from '../public/AgeCalculator3.PNG'
+import Calculator1 from '../public/Calculator1.PNG'
+import Calculator2 from '../public/Calculator2.PNG'
+import Calculator3 from '../public/Calculator3.PNG'
+import Google1 from '../public/Google1.PNG'
+import Google2 from '../public/Google2.PNG'
 import { useState, useRef } from 'react';
 import { Tabs } from "flowbite-react";
 import { Carousel } from "flowbite-react";
