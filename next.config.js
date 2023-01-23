@@ -4,3 +4,13 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  publicRuntimeConfig: {
+    staticFolder: '/public',
+  },
+};
+
+const withImages = require('next-images');
+
+module.exports = withImages(nextConfig);
