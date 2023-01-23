@@ -77,7 +77,7 @@ export default function Home() {
                 <BsLightbulbFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
               </li>
               <li>
-                <a className=' font-mono bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' target='_blank' href="Karar_Alshreese_-_Full_Stack_Developer (1).pdf">
+                <a className=' font-mono bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' target='_blank' rel="noreferrer" href="Karar_Alshreese_-_Full_Stack_Developer (1).pdf">
                 Resume
                 </a>
               </li>
@@ -91,23 +91,23 @@ export default function Home() {
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a target="_blank" href="https://www.linkedin.com/in/karar-alshreese-37b4211b4/?originalSubdomain=se"><AiFillLinkedin/></a>
-            <a target="_blank" href="https://www.instagram.com/karar.alsh/"><AiFillInstagram/></a>
-            <a target="_blank" href="https://github.com/KararAlsh?tab=repositories"><AiFillGithub/></a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/karar-alshreese-37b4211b4/?originalSubdomain=se"><AiFillLinkedin/></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/karar.alsh/"><AiFillInstagram/></a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/KararAlsh?tab=repositories"><AiFillGithub/></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-purple-400 to-pink-600 rounded-full w-80 h-80 my-6 overflow-hidden lg:h-90 lg:w-90'>
-            <Image className=' object-scale-down' src={Memoji} />
+            <Image className=' object-scale-down' src={Memoji} alt="..." />
           </div>
         </section>
         <section>
           <div className='text-center'>
             <h3 className='text-3xl py-2 font-burtons dark:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Little about me and what I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-500 font-semibold max-w-lg mx-auto'>Hello! My name is Karar, im a Junior full-stack developer who has recently completed a 3-month long bootcamp with <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. I have always been a creative person and have now found a passion in coding and bringing my ideas to life on the internet. I am a dedicated to writing clean, elegant code, and excited to apply my skills and knowledge to real-world projects.</p>
+            <p className='text-md py-2 leading-8 text-gray-500 font-semibold max-w-lg mx-auto'>Hello! My name is Karar, im a Junior full-stack developer who has recently completed a 3-month long bootcamp with <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'><a href='https://tortugacoders.com/' target='_blank' rel="noreferrer">Tortuga coders</a></span>. I have always been a creative person and have now found a passion in coding and bringing my ideas to life on the internet. I am a dedicated to writing clean, elegant code, and excited to apply my skills and knowledge to real-world projects.</p>
             <p className='text-md py-2 leading-8 text-gray-500 font-semibold max-w-lg mx-auto'>Im a team player who always is eager to learn and improve. With my recent training and experience, i am ready to take on new challenges and become a valuable asset to any development team and company.</p>
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-2xl p-10 rounded-xl my-10 lg:w-1/3'>
-              <Image width={100} height={100} src={ideas} />
+              <Image width={100} height={100} src={ideas} alt="..."/>
               <h3 className='text-lg font-burtons pt-8 pb-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Great ideas</h3>
               <p className='text-gray-500 font-semibold'>
                 Coming up with great new ideas that will benefit my team and employer.
@@ -118,7 +118,7 @@ export default function Home() {
               <p className='text-gray-500 font-semibold'>Problem solving</p>
             </div>
             <div className='text-center shadow-2xl p-10 rounded-xl my-10 lg:w-1/3'>
-              <Image width={100} height={100} src={productivity} />
+              <Image width={100} height={100} src={productivity} alt="..." />
               <h3 className='text-lg font-burtons pt-8 pb-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Productivity</h3>
               <p className='text-gray-500 font-semibold'>
                 Always hard working.
@@ -129,7 +129,7 @@ export default function Home() {
               <p className='text-gray-500 font-semibold'>Consistently taking action towards achieving my goals.</p>
             </div>
             <div className='text-center shadow-2xl p-10 rounded-xl my-10 lg:w-1/3'>
-              <Image width={100} height={100} src={design} />
+              <Image width={100} height={100} src={design}  alt="..." />
               <h3 className='text-lg font-burtons pt-8 pb-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Great design</h3>
               <p className='text-gray-500 font-semibold'>
               I design with a strong sense of functionality, aesthetics, and usability in my work.
@@ -144,7 +144,7 @@ export default function Home() {
         <section>
           <div className='text-center'>
             <h3 className='text-3xl py-7 font-burtons dark:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-500 font-semibold max-w-lg mx-auto'>Here I would like to present to you a selection of screenshots showcasing the projects I have been working on since my time at <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. In total, I have created five projects, with my portfolio website being the sixth. I hope you find them interesting and engaging.</p>
+            <p className='text-md py-2 leading-8 text-gray-500 font-semibold max-w-lg mx-auto'>Here I would like to present to you a selection of screenshots showcasing the projects I have been working on since my time at <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'><a href='https://tortugacoders.com/' target='_blank' rel="noreferrer">Tortuga coders</a></span>. In total, I have created five projects, with my portfolio website being the sixth. I hope you find them interesting and engaging.</p>
           </div>  
           <Tabs.Group className="flex justify-between" aria-label="Tabs with icons" style="underline">
             <Tabs.Item active={true} title="Airbnb Clone"> 
