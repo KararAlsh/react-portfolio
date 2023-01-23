@@ -4,5 +4,4 @@ module.exports = withImages({
   publicRuntimeConfig: {
     staticFolder: '/public',
   },
-  reactStrictMode: true,
 });
