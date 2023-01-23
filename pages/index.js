@@ -13,7 +13,7 @@ import Airbnb4 from '../public/Airbnb4.PNG';
 import Airbnb5 from '../public/Airbnb5.PNG';
 import Airbnb6 from '../public/Airbnb6.PNG';
 import Airbnb7 from '../public/Airbnb7.PNG';
-import WeatherTune1 from '../public/WeatherTune1.PNG'
+import WeatherTune1 from '../public/WeatherTune1.PNG' 
 import WeatherTune2 from '../public/WeatherTune2.PNG'
 import WeatherTune3 from '../public/WeatherTune3.PNG'
 import WeatherTune4 from '../public/WeatherTune4.PNG'
@@ -150,45 +150,45 @@ export default function Home() {
             <Tabs.Item active={true} title="Airbnb Clone"> 
               <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 ">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
-                <Image
+                <img
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Airbnb2}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Airbnb3}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Airbnb4}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb4);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Airbnb5}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb5);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Airbnb6}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb6);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Airbnb7}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb7);}}
                   />
@@ -209,51 +209,51 @@ export default function Home() {
             <Tabs.Item title="Weather Tune">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
-                <Image
+                <img
                     className="h-full w-full object-contain"
-                    src={WeatherTune1}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune1);}} 
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={WeatherTune2}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune2);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={WeatherTune3}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune3);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={WeatherTune4}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune4);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={WeatherTune5}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune5);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={WeatherTune6}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune6);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={WeatherTune7}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune7);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={WeatherTune8}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune8);}}
                   />
@@ -274,21 +274,21 @@ export default function Home() {
             <Tabs.Item title="Age Calculator">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
-                <Image
+                <img
                     className="h-full w-full object-contain"
-                    src={AgeCalculator1}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator1);}} 
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={AgeCalculator2}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator2);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={AgeCalculator3}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator3);}}
                   />
@@ -309,21 +309,21 @@ export default function Home() {
             <Tabs.Item title="Calculator">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
-                <Image
+                <img
                     className="h-full w-full object-contain"
-                    src={Calculator1}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator1);}} 
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Calculator2}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator2);}}
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Calculator3}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator3);}}
                   />
@@ -344,15 +344,15 @@ export default function Home() {
             <Tabs.Item title="Google Clone">
             <div className="h-56 sm:h-56 xl:h-80 2xl:h-96">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
-                <Image
+                <img
                     className="h-full w-full object-contain"
-                    src={Google1}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Google1);}} 
                   />
-                  <Image
+                  <img
                     className="h-full w-full object-contain"
-                    src={Google2}
+                    src="Airbnb2.PNG"
                     alt="..."
                     onClick={() => {setModalIsOpen(true); setCurrentImage(Google2);}}
                   />
