@@ -6,7 +6,7 @@ import Memoji from '../public/Memoji-Karar.PNG';
 import ideas from '../public/ideas.PNG';
 import productivity from '../public/productivity.PNG';
 import design from '../public/design.PNG';
-import Airbnb1 from '../public/Airbnb1.PNG';
+/* import Airbnb1 from '../public/Airbnb1.PNG';
 import Airbnb2 from '../public/Airbnb2.PNG';
 import Airbnb3 from '../public/Airbnb3.PNG';
 import Airbnb4 from '../public/Airbnb4.PNG';
@@ -28,7 +28,7 @@ import Calculator1 from '../public/Calculator1.PNG'
 import Calculator2 from '../public/Calculator2.PNG'
 import Calculator3 from '../public/Calculator3.PNG'
 import Google1 from '../public/Google1.PNG'
-import Google2 from '../public/Google2.PNG'
+import Google2 from '../public/Google2.PNG' */
 import { useState, useRef } from 'react';
 import { Tabs } from "flowbite-react";
 import { Carousel } from "flowbite-react";
@@ -151,45 +151,45 @@ export default function Home() {
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb2}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb3}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb4}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb4);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb5}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb5);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb6}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb6);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb7}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb7);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
@@ -210,51 +210,51 @@ export default function Home() {
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={WeatherTune1}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={WeatherTune2}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune2);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={WeatherTune3}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune3);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={WeatherTune4}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune4);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={WeatherTune5}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune5);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={WeatherTune6}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune6);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={WeatherTune7}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune7);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={WeatherTune8}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune8);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
@@ -275,21 +275,21 @@ export default function Home() {
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={AgeCalculator1}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={AgeCalculator2}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator2);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={AgeCalculator3}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator3);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
@@ -310,21 +310,21 @@ export default function Home() {
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={Calculator1}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Calculator2}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator2);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Calculator3}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator3);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
@@ -345,15 +345,15 @@ export default function Home() {
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={Google1}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Google1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Google2}
+                    src={Memoji}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Google2);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Memoji);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
