@@ -21,10 +21,15 @@ import WeatherTune5 from '../public/images/WeatherTune5.png'
 import WeatherTune6 from '../public/images/WeatherTune6.png'
 import WeatherTune7 from '../public/images/WeatherTune7.png'
 import WeatherTune8 from '../public/images/WeatherTune8.png'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick'
-import { useState, useEffect, useRef } from 'react';
+import AgeCalculator1 from '../public/images/AgeCalculator1.png'
+import AgeCalculator2 from '../public/images/AgeCalculator2.png'
+import AgeCalculator3 from '../public/images/AgeCalculator3.png'
+import Calculator1 from '../public/images/Calculator1.png'
+import Calculator2 from '../public/images/Calculator2.png'
+import Calculator3 from '../public/images/Calculator3.png'
+import Google1 from '../public/images/Google1.png'
+import Google2 from '../public/images/Google2.png'
+import { useState, useRef } from 'react';
 import { Tabs } from "flowbite-react";
 import { Carousel } from "flowbite-react";
 import Modal from 'react-modal';
@@ -54,20 +59,6 @@ export default function Home() {
     arrows: false,
   }
 
-  useEffect(() => {
-    const handleAfterChange = (current) => {
-      setCurrentSlide(current);
-    }
-    settings.afterChange = handleAfterChange
-  }, []);
-
-  const goToPrevSlide = () => {
-    ref.current.slickPrev();
-  }
-
-  const goToNextSlide = () => {
-    ref.current.slickNext();
-  }
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -86,7 +77,7 @@ export default function Home() {
                 <BsLightbulbFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
               </li>
               <li>
-                <a className=' font-mono bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">
+                <a className=' font-mono bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' target='_blank' href="Karar_Alshreese_-_Full_Stack_Developer (1).pdf">
                 Resume
                 </a>
               </li>
@@ -100,9 +91,9 @@ export default function Home() {
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillLinkedin/>
-            <AiFillInstagram/>
-            <AiFillGithub/>
+            <a target="_blank" href="https://www.linkedin.com/in/karar-alshreese-37b4211b4/?originalSubdomain=se"><AiFillLinkedin/></a>
+            <a target="_blank" href="https://www.instagram.com/karar.alsh/"><AiFillInstagram/></a>
+            <a target="_blank" href="https://github.com/KararAlsh?tab=repositories"><AiFillGithub/></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-purple-400 to-pink-600 rounded-full w-80 h-80 my-6 overflow-hidden lg:h-90 lg:w-90'>
             <Image className=' object-scale-down' src={Memoji} />
@@ -152,12 +143,12 @@ export default function Home() {
         </section>
         <section>
           <div className='text-center'>
-            <h3 className='text-3xl py-1 font-burtons dark:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Portfolio</h3>
+            <h3 className='text-3xl py-7 font-burtons dark:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Portfolio</h3>
             <p className='text-md py-2 leading-8 text-gray-500 font-semibold max-w-lg mx-auto'>Here I would like to present to you a selection of screenshots showcasing the projects I have been working on since my time at <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'><a href='https://tortugacoders.com/' target='_blank'>Tortuga coders</a></span>. In total, I have created five projects, with my portfolio website being the sixth. I hope you find them interesting and engaging.</p>
           </div>  
           <Tabs.Group className="flex justify-between" aria-label="Tabs with icons" style="underline">
             <Tabs.Item active={true} title="Airbnb Clone"> 
-              <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 lg:mx-44">
+              <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 ">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
@@ -210,13 +201,13 @@ export default function Home() {
                   </div>
                 </Modal>
               </div>
-              <Card className='lg:mx-44' href="#">
+              <Card className='' href="#">
                 <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Airbnb Clone</h3>
                 <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>I am excited to present my Airbnb clone project, which I built using JavaScript, CSS, HTML, and Bootstrap for the front-end and MongoDB for the server-side. This project allowed me to work with different technologies and gain hands-on experience in building a web application that is similar to a real-world platform like Airbnb. The project features user authentication, property listings, reservations, and reviews. Users can create a profile, sign in, list a house, leave reviews, book a house, and navigate through the available properties without the need of an account. This project not only helped me improve my skills in web development but also gave me an opportunity to understand the functionalities of a vacation rental platform.</p>
               </Card>
             </Tabs.Item>
             <Tabs.Item title="Weather Tune">
-            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 lg:mx-44">
+            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
@@ -275,55 +266,31 @@ export default function Home() {
                   </div>
                 </Modal>
               </div>
-              <Card className='lg:mx-44' href="#">
+              <Card className='' href="#">
                 <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Weather Tune</h3>
                 <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>I created Weather Tune, an innovative weather app that connects to your Spotify account and generates a playlist based on the current weather conditions. Utilizing React, HTML, and CSS, I developed this app to bring together the best of both worlds, weather and music. I used the OpenWeatherMap API to provide accurate weather information, and the Spotify API to connect to your account and suggest music that reflects the current weather. With Weather Tune, checking the weather just got a lot more fun as you can instantly set the perfect mood with a curated playlist and watch a background video of the current weather, all in one place. It was a great experience to come up with this idea and develop it during my time at Tortuga Coders.</p>
               </Card>
             </Tabs.Item>
             <Tabs.Item title="Age Calculator">
-            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 lg:mx-44">
+            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={AgeCalculator1}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator1);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb2}
+                    src={AgeCalculator2}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator2);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb3}
+                    src={AgeCalculator3}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb4}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb4);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb5}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb5);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb6}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb6);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb7}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb7);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(AgeCalculator3);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
@@ -334,55 +301,31 @@ export default function Home() {
                   </div>
                 </Modal>
               </div>
-              <Card className='lg:mx-44' href="#">
-                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Airbnb Clone</h3>
-                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>I am excited to present my Airbnb clone project, which I built using JavaScript, CSS, HTML, and Bootstrap for the front-end and MongoDB for the server-side. This project allowed me to work with different technologies and gain hands-on experience in building a web application that is similar to a real-world platform like Airbnb. The project features user authentication, property listings, reservations, and reviews. Users can create a profile, sign in, list a house, leave reviews, book a house, and navigate through the available properties without the need of an account. This project not only helped me improve my skills in web development but also gave me an opportunity to understand the functionalities of a vacation rental platform.</p>
+              <Card className='' href="#">
+                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Age Calculator</h3>
+                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>I have developed a user-friendly age calculator that allows users to input their date of birth and receive an accurate calculation of their age in years, months, and days. This project was built using JavaScript, HTML, and CSS, and is a great example of my ability to create functional and visually pleasing web applications.</p>
               </Card>
             </Tabs.Item>
             <Tabs.Item title="Calculator">
-            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 lg:mx-44">
+            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Calculator1}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator1);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb2}
+                    src={Calculator2}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator2);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb3}
+                    src={Calculator3}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb4}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb4);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb5}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb5);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb6}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb6);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb7}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb7);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Calculator3);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
@@ -393,55 +336,25 @@ export default function Home() {
                   </div>
                 </Modal>
               </div>
-              <Card className='lg:mx-44' href="#">
-                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Airbnb Clone</h3>
-                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>I am excited to present my Airbnb clone project, which I built using JavaScript, CSS, HTML, and Bootstrap for the front-end and MongoDB for the server-side. This project allowed me to work with different technologies and gain hands-on experience in building a web application that is similar to a real-world platform like Airbnb. The project features user authentication, property listings, reservations, and reviews. Users can create a profile, sign in, list a house, leave reviews, book a house, and navigate through the available properties without the need of an account. This project not only helped me improve my skills in web development but also gave me an opportunity to understand the functionalities of a vacation rental platform.</p>
+              <Card className='' href="#">
+                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Calculator</h3>
+                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>Introducing my custom calculator, a sleek and modern tool that allows users to perform basic mathematical calculations with ease. This calculator features both a light and dark mode, with a gradient background that adds a touch of elegance. Built with HTML, CSS and JavaScript, this calculator is not only functional, but also visually stunning.</p>
               </Card>
             </Tabs.Item>
             <Tabs.Item title="Google Clone">
-            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96 lg:mx-44">
+            <div className="h-56 sm:h-56 xl:h-80 2xl:h-96">
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={Google1}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Google1);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb2}
+                    src={Google2}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb3}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb4}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb4);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb5}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb5);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb6}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb6);}}
-                  />
-                  <Image
-                    className="h-full w-full object-contain"
-                    src={Airbnb7}
-                    alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb7);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(Google2);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
@@ -452,10 +365,9 @@ export default function Home() {
                   </div>
                 </Modal>
               </div>
-              <Card className='lg:mx-44' href="#">
-                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Airbnb Clone</h3>
-                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>I am excited to present my Airbnb clone project, which I built using JavaScript, CSS, HTML, and Bootstrap for the front-end and MongoDB for the server-side. This project allowed me to work with different technologies and gain hands-on experience in building a web application that is similar to a real-world platform like Airbnb. The project features user authentication, property listings, reservations, and reviews. Users can create a profile, sign in, list a house, leave reviews, book a house, and navigate through the available properties without the need of an account. This project not only helped me improve my skills in web development but also gave me an opportunity to understand the functionalities of a vacation rental platform.</p>
-              </Card>
+              <Card className='' href="#">
+                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Google Clone</h3>
+                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>This Project was my first project and i created a replica of the Google homepage and results page, that showcases my proficiency in crafting visually appealing and responsive websites using HTML and CSS. The project emphasizes on the replication of the Google homepage, although it doesn't have the functionality of connecting to an actual search engine, it does allow users to type in search queries and it will shows pre-determined search results. This project demonstrates my ability to create high-fidelity web designs and my attention to detail in replicating the look and feel of a popular website</p></Card>
             </Tabs.Item>
           </Tabs.Group>
         </section>
