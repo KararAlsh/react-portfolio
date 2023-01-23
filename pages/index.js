@@ -35,7 +35,6 @@ import { Carousel } from "flowbite-react";
 import Modal from 'react-modal';
 import { Card } from "flowbite-react";
 
-EVERYTHING MOVED TO KARAR-PORTFOLIO
 
 
 
