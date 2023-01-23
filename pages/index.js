@@ -6,13 +6,21 @@ import Memoji from '../public/Memoji-Karar.png';
 import ideas from '../public/ideas.png';
 import productivity from '../public/productivity.png';
 import design from '../public/design.png';
-import Airbnb1 from '../public/Airbnb1.png';
-import Airbnb2 from '../public/Airbnb2.png';
-import Airbnb3 from '../public/Airbnb3.png';
-import Airbnb4 from '../public/Airbnb4.png';
-import Airbnb5 from '../public/Airbnb5.png';
-import Airbnb6 from '../public/Airbnb6.png';
-import Airbnb7 from '../public/Airbnb7.png';
+import Airbnb1 from '../public/images/Airbnb1.png';
+import Airbnb2 from '../public/images/Airbnb2.png';
+import Airbnb3 from '../public/images/Airbnb3.png';
+import Airbnb4 from '../public/images/Airbnb4.png';
+import Airbnb5 from '../public/images/Airbnb5.png';
+import Airbnb6 from '../public/images/Airbnb6.png';
+import Airbnb7 from '../public/images/Airbnb7.png';
+import WeatherTune1 from '../public/images/WeatherTune1.png'
+import WeatherTune2 from '../public/images/WeatherTune2.png'
+import WeatherTune3 from '../public/images/WeatherTune3.png'
+import WeatherTune4 from '../public/images/WeatherTune4.png'
+import WeatherTune5 from '../public/images/WeatherTune5.png'
+import WeatherTune6 from '../public/images/WeatherTune6.png'
+import WeatherTune7 from '../public/images/WeatherTune7.png'
+import WeatherTune8 from '../public/images/WeatherTune8.png'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick'
@@ -212,45 +220,51 @@ export default function Home() {
                 <Carousel slide={false} width="100%" className='bg-gradient-to-tr from-purple-400 to-pink-600 rounded-md' ref={ref} {...settings}>
                 <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb1}
+                    src={WeatherTune1}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb1);}} 
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune1);}} 
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb2}
+                    src={WeatherTune2}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb2);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune2);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb3}
+                    src={WeatherTune3}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb3);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune3);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb4}
+                    src={WeatherTune4}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb4);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune4);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb5}
+                    src={WeatherTune5}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb5);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune5);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb6}
+                    src={WeatherTune6}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb6);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune6);}}
                   />
                   <Image
                     className="h-full w-full object-contain"
-                    src={Airbnb7}
+                    src={WeatherTune7}
                     alt="..."
-                    onClick={() => {setModalIsOpen(true); setCurrentImage(Airbnb7);}}
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune7);}}
+                  />
+                  <Image
+                    className="h-full w-full object-contain"
+                    src={WeatherTune8}
+                    alt="..."
+                    onClick={() => {setModalIsOpen(true); setCurrentImage(WeatherTune8);}}
                   />
                 </Carousel>
                 <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} shouldCloseOnOverlayClick={true} className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
@@ -262,8 +276,8 @@ export default function Home() {
                 </Modal>
               </div>
               <Card className='lg:mx-44' href="#">
-                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Airbnb Clone</h3>
-                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>I am excited to present my Airbnb clone project, which I built using JavaScript, CSS, HTML, and Bootstrap for the front-end and MongoDB for the server-side. This project allowed me to work with different technologies and gain hands-on experience in building a web application that is similar to a real-world platform like Airbnb. The project features user authentication, property listings, reservations, and reviews. Users can create a profile, sign in, list a house, leave reviews, book a house, and navigate through the available properties without the need of an account. This project not only helped me improve my skills in web development but also gave me an opportunity to understand the functionalities of a vacation rental platform.</p>
+                <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Weather Tune</h3>
+                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>I created Weather Tune, an innovative weather app that connects to your Spotify account and generates a playlist based on the current weather conditions. Utilizing React, HTML, and CSS, I developed this app to bring together the best of both worlds, weather and music. I used the OpenWeatherMap API to provide accurate weather information, and the Spotify API to connect to your account and suggest music that reflects the current weather. With Weather Tune, checking the weather just got a lot more fun as you can instantly set the perfect mood with a curated playlist and watch a background video of the current weather, all in one place. It was a great experience to come up with this idea and develop it during my time at Tortuga Coders.</p>
               </Card>
             </Tabs.Item>
             <Tabs.Item title="Age Calculator">
