@@ -37,7 +37,7 @@ import { Card } from "flowbite-react";
 import IMG from "../public/IMG_7330.PNG"
 
 
-
+/* Will not work, continue in karar-portfolio */
 
 
 export default function Home() {
