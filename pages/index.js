@@ -367,7 +367,7 @@ export default function Home() {
               </div>
               <Card className='' href="#">
                 <h3 className='text-lg font-burtons pt-6 pb-1 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Google Clone</h3>
-                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>This Project was my first project and i created a replica of the Google homepage and results page, that showcases my proficiency in crafting visually appealing and responsive websites using HTML and CSS. The project emphasizes on the replication of the Google homepage, although it doesn't have the functionality of connecting to an actual search engine, it does allow users to type in search queries and it will shows pre-determined search results. This project demonstrates my ability to create high-fidelity web designs and my attention to detail in replicating the look and feel of a popular website</p></Card>
+                <p className='text-md py-2 leading-8 text-gray-500 font-semibold lg:mx-20'>This Project was my first project and i created a replica of the Google homepage and results page, that showcases my proficiency in crafting visually appealing and responsive websites using HTML and CSS. The project emphasizes on the replication of the Google homepage, although it doesnt have the functionality of connecting to an actual search engine, it does allow users to type in search queries and it will shows pre-determined search results. This project demonstrates my ability to create high-fidelity web designs and my attention to detail in replicating the look and feel of a popular website</p></Card>
             </Tabs.Item>
           </Tabs.Group>
         </section>
