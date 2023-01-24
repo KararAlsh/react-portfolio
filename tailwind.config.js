@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-
   darkMode: "class",
   content: [
     "./public/**/*.html",
@@ -11,11 +10,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        burtons: 'burtons',
-      }
+        burtons: "burtons",
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [
     require("flowbite/plugin")
   ],
-}
+};
