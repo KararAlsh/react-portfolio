@@ -6,7 +6,7 @@ import Memoji from '../public/Memoji-Karar.png';
 import ideas from '../public/ideas.png';
 import productivity from '../public/productivity.png';
 import design from '../public/design.png';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Tabs } from "flowbite-react";
 import { Carousel } from "flowbite-react";
 import Modal from 'react-modal';
@@ -34,6 +34,8 @@ import Airbnb4 from '../public/Airbnb4.png'
 import Airbnb5 from '../public/Airbnb5.png'
 import Airbnb6 from '../public/Airbnb6.png'
 import Airbnb7 from '../public/Airbnb7.png'
+import React from 'react';
+import { isServer } from 'next';
 
 
 
@@ -47,6 +49,12 @@ export default function Home() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const ref = useRef(null);
+
+  useEffect(() => {
+    if (!isServer) {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   const settings = {
     dots: true,
